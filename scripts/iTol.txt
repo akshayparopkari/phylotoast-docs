@@ -66,3 +66,15 @@ Optional arguments
 .. cmdoption:: -h, --help
 
     Show the help message and exit.
+
+Example Plot
+-------------
+.. figure:: PCoA/iTol3.png
+   :scale: 45%
+   :align: center
+
+.. code-block:: bash
+
+    command: iTol.py -i example_otus.biom -m mapping.txt -t rep_set_tree.tre -e iTol/iTol.tre -c Category -a NMRA -o iTol/iTol_NMRA.txt
+
+    command: iTol.py -i example_otus.biom -m mapping.txt -a raw -o iTol/iTol_raw.txt

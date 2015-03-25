@@ -2,7 +2,7 @@
 biom_relative_abundance.py
 ==========================
 
-Convert a BIOM file of OTU abundance data into a CSV of relative abundance
+Convert a BIOM file of OTU abundance data into a TSV of relative abundance
 data.
 
     .. code-block:: bash

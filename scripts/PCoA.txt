@@ -92,9 +92,17 @@ Example plots
    :scale: 50%
    :align: center
 
+.. code-block:: bash
+
+    command: PCoA.py -i unweighted_unifrac_pc.txt -m mapping.txt -b Category -d 2 -s 150
+
 
 3D PCoA plot with 2 metadata categories - DiseaseState and SmokingStatus.
 
 .. image:: PCoA/PCoA3.png
    :scale: 50%
    :align: center
+
+.. code-block:: bash
+
+    command: PCoA.py -i unweighted_unifrac_pc.txt -m mapping.txt -b Category -d 3 -s 150

@@ -24,11 +24,12 @@ Required Arguments
 .. cmdoption:: -d NAMES_COLORS_IDS_FN, --names_colors_ids_fn NAMES_COLORS_IDS_FN
 
     The name of an input data file containing three items:
-    Line 1: a tab-separated list of display names for the different types in
-    the specified mapping category (--mapping_category), Line 2: a matching
-    tab-separated list of hexadecimal colors for each of the category types,
-    Lines 3-end: a tab-separated pair specifying OTU ID and OTU Name. Each
-    entry will get a separate PCoA plot under a file with the name of the OTU.
+
+    - Line 1: A tab-separated list of display names for the different types in the specified mapping category (--mapping_category).
+
+    - Line 2: A matching tab-separated list of hexadecimal colors for each of the category types.
+
+    - Lines 3-end: A tab-separated pair specifying OTU ID and OTU Name. Each entry will get a separate PCoA plot under a file with the name of the OTU.
 
 .. cmdoption:: -m MAPPING, --mapping MAPPING
 
@@ -68,6 +69,10 @@ PCoA bubble plots of subgingival microbiome pathogens of smokers [1]_.
 .. image:: PCoA/PCoA_bubble_example_smokers_pathogens.png
    :scale: 50%
    :align: center
+
+.. code-block:: bash
+
+    command: PCoA_bubble.py -i example_otus.biom -u unweighted_unifrac_pc.txt -d PCoA_bubble_color.txt -m mapping.txt -c Category -o PCoAplots/
 
 Citation:
 
